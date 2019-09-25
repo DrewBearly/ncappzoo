@@ -11,5 +11,8 @@ CMakeLists.txt.user
 #ignore python cache
 __pycache__
 
+#ignore macOS settings
+.DS_Store
+
 
 
