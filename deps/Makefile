@@ -8,16 +8,16 @@ PIP = pip3 --version
 OPENCV = python3 -c "import cv2"
 
 .PHONY: install-deps
-install-deps: deps
+install-deps: reqs
 
 .PHONY: install-reqs
-install-reqs: deps
+install-reqs: reqs
 
 .PHONY: install
-install: deps
+install: reqs
 
-.PHONY: deps
-deps:
+.PHONY: reqs
+reqs:
 	@echo $(YELLOW)'\n'${APP_NAME}": Installing requirements and downloading dependencies...\n"$(NOCOLOR)
 	@echo "\n Checking pip3..."
 	@if $(shell) ${PIP} 2> /dev/null; \
