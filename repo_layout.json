@@ -1,0 +1,67 @@
+{
+    "_comment":"This layout defines the repository and points scripts to the right location of readme files. Copyright 2020 Intel Corporation",
+    "repo":
+    {
+        "ncappzoo":{
+            "top":"yes",
+            "key":"ncappzoo",
+            "name":"ncappzoo",
+            "menu": [
+            {
+                "Option":"apps",
+                "Description":"see the apps",
+                "Command":"menu",
+                "Arguments":"apps"                
+            },
+            {
+                "Option":"Back",
+                "Description":"Return to Developer Options",
+                "Command":"menu",
+                "Arguments":"sample_repos"
+            }
+            ]
+        },
+        "apps":{
+            "top":"no",
+            "name":"apps",
+            "menu":[
+                {
+                    "Option":"benchmark_app",
+                    "Description":"try out the benchmark app",
+                    "Command":"menu",
+                    "Arguments":"benchmark_app"
+                },
+                {
+                    "Option":"Back",
+                    "Description":"Return to the ncappzoo main menu",
+                    "Command":"menu",
+                    "Arguments":"ncappzoo"
+                }
+            ]
+        },
+        "benchmark_app": {
+            "top":"no",
+            "name":"benchmark_app",
+            "menu":[
+                {
+                    "Option":"View Readme",
+                    "Description":"View the Readme for benchmark_app",
+                    "Command":"display_readme",
+                    "Arguments":" /apps/benchmark_ncs/README.md"
+                },
+                {
+                    "Option":"Run the App",
+                    "Description":"Run the app with a default network and settings",
+                    "Command":"",
+                    "Arguments":""
+                },
+                {
+                    "Option":"Back",
+                    "Description":"Return to the app listing",
+                    "Command":"menu",
+                    "Arguments":"apps"
+                }
+            ]
+        }
+    }
+}
