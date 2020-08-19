@@ -14,6 +14,12 @@
                 "Arguments":"apps"                
             },
             {
+                "Option":"networks",
+                "Description":"see the networks",
+                "Command":"menu",
+                "Arguments":"networks"
+            },
+            {
                 "Option":"Back",
                 "Description":"Return to Developer Options",
                 "Command":"menu",
@@ -23,8 +29,14 @@
         },
         "apps":{
             "top":"no",
-            "name":"apps",
+            "name":"apps - Page 1",
             "menu":[
+                {
+                    "Option":"View Readme",
+                    "Description":"View the Readme for the apps folder",
+                    "Command":"display_readme",
+                    "Arguments":" /apps/README.md"
+                },
                 {
                     "Option":"benchmark_app",
                     "Description":"try out the benchmark app",
@@ -32,10 +44,149 @@
                     "Arguments":"benchmark_app"
                 },
                 {
-                    "Option":"other_app",
-                    "Description":"Look at this other, cooler app that is totally different",
+                    "Option":"birds",
+                    "Description":"check out birds",
                     "Command":"menu",
-                    "Arguments":"other_app"
+                    "Arguments":"birds"
+                },
+                {
+                    "Option":"chef_ai",
+                    "Description":"check out chef_ai",
+                    "Command":"menu",
+                    "Arguments":"chef_ai"
+                },
+                {
+                    "Option":"classifier_flash",
+                    "Description":"check out classifier_flash",
+                    "Command":"menu",
+                    "Arguments":"classifier_flash"
+                },
+                {
+                    "Option":"classifier_grid",
+                    "Description":"check out classifier_grid",
+                    "Command":"menu",
+                    "Arguments":"classifier_grid"
+                },
+                {
+                    "Option":"classifier_gui",
+                    "Description":"check out classifier_gui",
+                    "Command":"menu",
+                    "Arguments":"classifier_gui"
+                },
+                {
+                    "Option":"driving_pi",
+                    "Description":"check out driving_pi",
+                    "Command":"menu",
+                    "Arguments":"driving_pi"
+                },
+                {
+                    "Option":"Next Page",
+                    "Description":"Go to Page 2",
+                    "Command":"menu",
+                    "Arguments":"apps2"
+                },
+                {
+                    "Option":"Back",
+                    "Description":"Return to the ncappzoo main menu",
+                    "Command":"menu",
+                    "Arguments":"ncappzoo"
+                }
+            ]
+        },
+        "apps2": {
+            "top":"no",
+            "name":"apps - Page 2",
+            "menu" :[
+                {
+                    "Option":"gender_age",
+                    "Description":"check out gender_age",
+                    "Command":"menu",
+                    "Arguments":"gender_age"
+                },
+                {
+                    "Option":"gesture_piarm",
+                    "Description":"check out gesture_piarm",
+                    "Command":"menu",
+                    "Arguments":"gesture_piarm"
+                },
+                {
+                    "Option":"mnist_calc",
+                    "Description":"check out mnist_calc",
+                    "Command":"menu",
+                    "Arguments":"mnist_calc"
+                },
+                {
+                    "Option":"ncs_digital_sign",
+                    "Description":"check out ncs_digital_sign",
+                    "Command":"menu",
+                    "Arguments":"ncs_digital_sign"
+                },
+                {
+                    "Option":"realsense_object_distance_detection",
+                    "Description":"check out realsense_object_distance_detection",
+                    "Command":"menu",
+                    "Arguments":"realsense_object_distance_detection"
+                },
+                {
+                    "Option":"realsense_segmentation",
+                    "Description":"check out realsense_segmentation",
+                    "Command":"menu",
+                    "Arguments":"realsense_segmentation"
+                },
+                {
+                    "Option":"Next Page",
+                    "Description":"Go to Page 2",
+                    "Command":"menu",
+                    "Arguments":"apps3"
+                },
+                {
+                    "Option":"Previous Page",
+                    "Description":"Go to Page 1",
+                    "Command":"menu",
+                    "Arguments":"apps"
+                },
+                {
+                    "Option":"Back",
+                    "Description":"Return to the ncappzoo main menu",
+                    "Command":"menu",
+                    "Arguments":"ncappzoo"
+                }
+            ]
+
+        },
+        "apps3": {
+            "top":"no",
+            "name":"apps - Page 2",
+            "menu" :[
+                {
+                    "Option":"simple_classifier_cpp",
+                    "Description":"check out simple_classifier_cpp",
+                    "Command":"menu",
+                    "Arguments":"simple_classifier_cpp"
+                },
+                {
+                    "Option":"simple_classifier_cpp_camera",
+                    "Description":"check out simple_classifier_cpp_camera",
+                    "Command":"menu",
+                    "Arguments":"simple_classifier_cpp_camera"
+                },
+                {
+                    "Option":"simple_classifier_py",
+                    "Description":"check out simple_classifier_py",
+                    "Command":"menu",
+                    "Arguments":"simple_classifier_py"
+                },
+                {
+                    "Option":"simple_classifier_py_camera",
+                    "Description":"check out simple_classifier_py_camera",
+                    "Command":"menu",
+                    "Arguments":"simple_classifier_py_camera"
+                },
+                {
+                    "Option":"Previous Page",
+                    "Description":"Go to Page 2",
+                    "Command":"menu",
+                    "Arguments":"apps2"
                 },
                 {
                     "Option":"Back",
@@ -59,6 +210,246 @@
                     "Option":"Run the App",
                     "Description":"Run the app with a default network and settings",
                     "Command":"run",
+                    "Arguments":" make -C /opt/intel/ncb_demos/apps/benchmark_ncs run"
+                },
+                {
+                    "Option":"Back",
+                    "Description":"Return to the app listing",
+                    "Command":"menu",
+                    "Arguments":"apps"
+                }
+            ]
+        },
+        "birds": {
+            "top":"no",
+            "name":"birds",
+            "menu":[
+                {
+                    "Option":"View Readme",
+                    "Description":"View the Readme for this app",
+                    "Command":"display_readme",
+                    "Arguments":" /apps/birds/README.md"
+                },
+                {
+                    "Option":"Back",
+                    "Description":"Return to the app listing",
+                    "Command":"menu",
+                    "Arguments":"apps"
+                }
+            ]
+        },
+        "chef_ai": {
+            "top":"no",
+            "name":"classifier_flash",
+            "menu":[
+                {
+                    "Option":"View Readme",
+                    "Description":"View the Readme for this app",
+                    "Command":"display_readme",
+                    "Arguments":" /apps/chef_ai/README.md"
+                },
+                {
+                    "Option":"Back",
+                    "Description":"Return to the app listing",
+                    "Command":"menu",
+                    "Arguments":"apps"
+                }
+            ]
+        },
+        "classifier_flash": {
+            "top":"no",
+            "name":"classifier_flash",
+            "menu":[
+                {
+                    "Option":"View Readme",
+                    "Description":"View the Readme for this app",
+                    "Command":"display_readme",
+                    "Arguments":" /apps/classifier_flash/README.md"
+                },
+                {
+                    "Option":"Back",
+                    "Description":"Return to the app listing",
+                    "Command":"menu",
+                    "Arguments":"apps"
+                }
+            ]
+        },
+        "classifier_grid": {
+            "top":"no",
+            "name":"classifier_grid",
+            "menu":[
+                {
+                    "Option":"View Readme",
+                    "Description":"View the Readme for this app",
+                    "Command":"display_readme",
+                    "Arguments":" /apps/classifier_grid/README.md"
+                },
+                {
+                    "Option":"Back",
+                    "Description":"Return to the app listing",
+                    "Command":"menu",
+                    "Arguments":"apps"
+                }
+            ]
+        },
+        "classifier_gui": {
+            "top":"no",
+            "name":"classifier_gui",
+            "menu":[
+                {
+                    "Option":"View Readme",
+                    "Description":"View the Readme for this app",
+                    "Command":"display_readme",
+                    "Arguments":" /apps/classifier_gui/README.md"
+                },
+                {
+                    "Option":"Back",
+                    "Description":"Return to the app listing",
+                    "Command":"menu",
+                    "Arguments":"apps"
+                }
+            ]
+        },
+        "driving_pi": {
+            "top":"no",
+            "name":"driving_pi",
+            "menu":[
+                {
+                    "Option":"View Readme",
+                    "Description":"View the Readme for this app",
+                    "Command":"display_readme",
+                    "Arguments":" /apps/driving_pi/README.md"
+                },
+                {
+                    "Option":"Back",
+                    "Description":"Return to the app listing",
+                    "Command":"menu",
+                    "Arguments":"apps"
+                }
+            ]
+        },
+        "gender_age": {
+            "top":"no",
+            "name":"gender_age",
+            "menu":[
+                {
+                    "Option":"View Readme",
+                    "Description":"View the Readme for this app",
+                    "Command":"display_readme",
+                    "Arguments":" /apps/gender_age/README.md"
+                },
+                {
+                    "Option":"Back",
+                    "Description":"Return to the app listing",
+                    "Command":"menu",
+                    "Arguments":"apps"
+                }
+            ]
+        },
+        "gesture_piarm": {
+            "top":"no",
+            "name":"gesture_piarm",
+            "menu":[
+                {
+                    "Option":"View Readme",
+                    "Description":"View the Readme for this app",
+                    "Command":"display_readme",
+                    "Arguments":" /apps/gesture_piarm/README.md"
+                },
+                {
+                    "Option":"Back",
+                    "Description":"Return to the app listing",
+                    "Command":"menu",
+                    "Arguments":"apps"
+                }
+            ]
+        },
+        "mnist_calc": {
+            "top":"no",
+            "name":"mnist_calc",
+            "menu":[
+                {
+                    "Option":"View Readme",
+                    "Description":"View the Readme for this app",
+                    "Command":"display_readme",
+                    "Arguments":" /apps/mnist_calc/README.md"
+                },
+                {
+                    "Option":"Back",
+                    "Description":"Return to the app listing",
+                    "Command":"menu",
+                    "Arguments":"apps"
+                }
+            ]
+        },
+        "ncs_digital_sign": {
+            "top":"no",
+            "name":"ncs_digital_sign",
+            "menu":[
+                {
+                    "Option":"View Readme",
+                    "Description":"View the Readme for this app",
+                    "Command":"display_readme",
+                    "Arguments":" /apps/ncs_digital_sign/README.md"
+                },
+                {
+                    "Option":"Back",
+                    "Description":"Return to the app listing",
+                    "Command":"menu",
+                    "Arguments":"apps"
+                }
+            ]
+        },
+        "realsense_object_distance_detection": {
+            "top":"no",
+            "name":"realsense_object_distance_detection",
+            "menu":[
+                {
+                    "Option":"View Readme",
+                    "Description":"View the Readme for this app",
+                    "Command":"display_readme",
+                    "Arguments":" /apps/realsense_object_distance_detection/README.md"
+                },
+                {
+                    "Option":"Back",
+                    "Description":"Return to the app listing",
+                    "Command":"menu",
+                    "Arguments":"apps"
+                }
+            ]
+        },
+        "realsense_segmentation": {
+            "top":"no",
+            "name":"realsense_segmentation",
+            "menu":[
+                {
+                    "Option":"View Readme",
+                    "Description":"View the Readme for this app",
+                    "Command":"display_readme",
+                    "Arguments":" /apps/realsense_segmentation/README.md"
+                },
+                {
+                    "Option":"Back",
+                    "Description":"Return to the app listing",
+                    "Command":"menu",
+                    "Arguments":"apps"
+                }
+            ]
+        },
+        "simple_classifier_cpp": {
+            "top":"no",
+            "name":"simple_classifier_cpp",
+            "menu":[
+                {
+                    "Option":"View Readme",
+                    "Description":"View the Readme for this app",
+                    "Command":"display_readme",
+                    "Arguments":" /apps/simple_classifier_cpp/README.md"
+                },
+                {
+                    "Option":"Run the App",
+                    "Description":"Run the app with a default network and settings",
+                    "Command":"run",
                     "Arguments":" make -C /opt/intel/ncb_demos/apps/simple_classifier_cpp run"
                 },
                 {
@@ -69,21 +460,70 @@
                 }
             ]
         },
-        "other_app": {
+        "simple_classifier_cpp_camera": {
             "top":"no",
-            "name":"other_app",
+            "name":"simple_classifier_cpp_camera",
             "menu":[
                 {
                     "Option":"View Readme",
-                    "Description":"View the Readme for view this other, cooler app",
+                    "Description":"View the Readme for this app",
                     "Command":"display_readme",
-                    "Arguments":" /apps/benchmark_ncs/README.md"
+                    "Arguments":" /apps/simple_classifier_cpp_camera/README.md"
                 },
                 {
-                    "Option":"Run the App",
-                    "Description":"Run the app with a default network and settings",
-                    "Command":"",
-                    "Arguments":""
+                    "Option":"Back",
+                    "Description":"Return to the app listing",
+                    "Command":"menu",
+                    "Arguments":"apps"
+                }
+            ]
+        },
+        "simple_classifier_py": {
+            "top":"no",
+            "name":"simple_classifier_py",
+            "menu":[
+                {
+                    "Option":"View Readme",
+                    "Description":"View the Readme for this app",
+                    "Command":"display_readme",
+                    "Arguments":" /apps/simple_classifier_py/README.md"
+                },
+                {
+                    "Option":"Back",
+                    "Description":"Return to the app listing",
+                    "Command":"menu",
+                    "Arguments":"apps"
+                }
+            ]
+        },
+        "simple_classifier_py_camera": {
+            "top":"no",
+            "name":"simple_classifier_py_camera",
+            "menu":[
+                {
+                    "Option":"View Readme",
+                    "Description":"View the Readme for this app",
+                    "Command":"display_readme",
+                    "Arguments":" /apps/simple_classifier_py_camera/README.md"
+                },
+                {
+                    "Option":"Back",
+                    "Description":"Return to the app listing",
+                    "Command":"menu",
+                    "Arguments":"apps"
+                }
+            ]
+        }
+        ,
+        "networks": {
+            "top":"no",
+            "name":"birds",
+            "menu":[
+                {
+                    "Option":"View Readme",
+                    "Description":"View the Readme for this app",
+                    "Command":"display_readme",
+                    "Arguments":" /networks/README.md"
                 },
                 {
                     "Option":"Back",
