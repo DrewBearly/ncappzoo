@@ -92,6 +92,30 @@
                     "Arguments":"apps"
                 }
             ]
+        },
+        "other_app": {
+            "top":"no",
+            "name":"other_app",
+            "menu":[
+                {
+                    "Option":"View Readme",
+                    "Description":"View the Readme for view this other, cooler app",
+                    "Command":"display_readme",
+                    "Arguments":" /apps/benchmark_ncs/README.md"
+                },
+                {
+                    "Option":"Run the App",
+                    "Description":"Run the app with a default network and settings",
+                    "Command":"",
+                    "Arguments":""
+                },
+                {
+                    "Option":"Back",
+                    "Description":"Return to the app listing",
+                    "Command":"menu",
+                    "Arguments":"apps"
+                }
+            ]
         }
     }
 }
